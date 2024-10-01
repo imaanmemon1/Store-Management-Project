@@ -1,4 +1,3 @@
-# Store-Management-Project
 # Unit 2 - Store Management Project
 
 ## Introduction
