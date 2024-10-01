@@ -23,4 +23,7 @@ Put and image of your UML Diagram here. Upload the image of your UML Diagram to 
 
 ## Description
 
-Write a description of your project here. Include what your store you made, and why you chose this topic. In your description, include as many vocab words from our class to explain how you represented the item/service from your store. If you have user input, explain how the user will interact with your store such as which questions are prompted to the user, what response is your program expecting, and how that is use to output information for your store in the console.
+The StoreRunner project is a management system for a community library that handles books and magazines. I chose this topic because I love reading books and going to the library to spend time reading in peace. The project uses object-oriented programming with a main class called LibraryItem and two subclasses: Book and Magazine. This setup shows how the subclasses can inherit common features while adding their own specific details. Users can interact with the system through the LibraryInteraction class, where they are asked to enter information like the title, author, ISBN, and availability of each item. The program takes this input to create new Book or Magazine objects and displays their details in the console using the toString() method. This StoreRunner interaction aims to make library management easier and encourage reading like Spongebob SquarePants.
+
+![image](https://github.com/user-attachments/assets/368b7174-7b4b-4696-b718-c88a16021950)
+
