@@ -1,5 +1,7 @@
+/**
+ * Represents a general library item with common properties.
+ */
 public class LibraryItem {
-    // Instance variables shared with subclasses
     private String title;
     private String author;
     private String ISBN;
@@ -10,7 +12,7 @@ public class LibraryItem {
         this.title = "";
         this.author = "";
         this.ISBN = "";
-        this.available = true;
+        this.available = true; // Default to available
     }
 
     // Parameterized constructor
@@ -21,40 +23,29 @@ public class LibraryItem {
         this.available = available;
     }
 
-    // Accessor and Mutator methods
+    // Accessor methods
     public String getTitle() {
         return title;
-    }
-
-    public void setTitle(String title) {
-        this.title = title;
     }
 
     public String getAuthor() {
         return author;
     }
 
-    public void setAuthor(String author) {
-        this.author = author;
-    }
-
     public String getISBN() {
         return ISBN;
-    }
-
-    public void setISBN(String ISBN) {
-        this.ISBN = ISBN;
     }
 
     public boolean isAvailable() {
         return available;
     }
 
+    // Mutator method
     public void setAvailable(boolean available) {
         this.available = available;
     }
 
-    // toString() method
+    // toString method
     //Override
     public String toString() {
         return "Title: " + title + ", Author: " + author + ", ISBN: " + ISBN + ", Available: " + available;

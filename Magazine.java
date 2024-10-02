@@ -1,5 +1,7 @@
+/**
+ * Represents a magazine, extending LibraryItem with additional properties.
+ */
 public class Magazine extends LibraryItem {
-    // Instance variable specific to Magazine
     private String issue;
 
     // No-argument constructor
@@ -14,16 +16,12 @@ public class Magazine extends LibraryItem {
         this.issue = issue;
     }
 
-    // Accessor and Mutator methods
+    // Accessor method
     public String getIssue() {
         return issue;
     }
 
-    public void setIssue(String issue) {
-        this.issue = issue;
-    }
-
-    // toString() method
+    // toString method
     // Override
     public String toString() {
         return super.toString() + ", Issue: " + issue;

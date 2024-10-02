@@ -1,5 +1,7 @@
+/**
+ * Represents a book, extending LibraryItem with additional properties.
+ */
 public class Book extends LibraryItem {
-    // Instance variable specific to Book
     private int pages;
     private boolean isEbook;
 
@@ -17,25 +19,17 @@ public class Book extends LibraryItem {
         this.isEbook = isEbook;
     }
 
-    // Accessor and Mutator methods
+    // Accessor methods
     public int getPages() {
         return pages;
-    }
-
-    public void setPages(int pages) {
-        this.pages = pages;
     }
 
     public boolean isEbook() {
         return isEbook;
     }
 
-    public void setEbook(boolean isEbook) {
-        this.isEbook = isEbook;
-    }
-
-    // toString() method
-    // Override
+    // toString method
+    //Override
     public String toString() {
         return super.toString() + ", Pages: " + pages + ", eBook: " + isEbook;
     }
