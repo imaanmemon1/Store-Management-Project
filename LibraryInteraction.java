@@ -10,6 +10,9 @@ public class LibraryInteraction {
         this.scanner = scanner;
     }
 
+ /**
+ * Asks questions about the book.
+ */ 
     public Book createBook() {
         System.out.print("Enter book title: ");
         String title = scanner.nextLine();
@@ -24,10 +27,14 @@ public class LibraryInteraction {
         System.out.print("Is it an eBook? (true/false): ");
         boolean isEbook = scanner.nextBoolean();
         scanner.nextLine(); 
-
+/**
+ * Returns the results of the book the user typed in altogether.
+ */
         return new Book(title, author, isbn, available, pages, isEbook);
     }
-
+/**
+ * Asks questions about the Magazine.
+ */
     public Magazine createMagazine() {
         System.out.print("Enter magazine title: ");
         String title = scanner.nextLine();
@@ -40,7 +47,9 @@ public class LibraryInteraction {
         System.out.print("Enter magazine issue date: ");
         String issue = scanner.next();
         scanner.nextLine(); 
-
+/**
+ * Returns the results of the Magazine the user typed in altogether.
+ */
         return new Magazine(title, author, isbn, available, issue);
     }
 }

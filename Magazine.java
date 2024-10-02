@@ -4,25 +4,32 @@
 public class Magazine extends LibraryItem {
     private String issue;
 
-    // No-argument constructor
+  /**
+ * No argument constructor for magazine
+ */
     public Magazine() {
         super();
         this.issue = "";
     }
 
-    // Parameterized constructor
+/**
+ * Parameterized constructors for the magazine
+ */
     public Magazine(String title, String author, String ISBN, boolean available, String issue) {
         super(title, author, ISBN, available);
         this.issue = issue;
     }
 
-    // Accessor method
+ /**
+ * Accessor method to get the issue
+ */
     public String getIssue() {
         return issue;
     }
 
-    // toString method
-    // Override
+ /**
+ * to-string method which will override the issue
+ */
     public String toString() {
         return super.toString() + ", Issue: " + issue;
     }
